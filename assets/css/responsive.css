@@ -1,0 +1,92 @@
+/* =====================================
+   1200
+===================================== */
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* =====================================
+   992
+===================================== */
+
+@media (max-width: 992px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats .container {
+    grid-template-columns: 1fr;
+  }
+
+  .trusted-logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =====================================
+   768
+===================================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trusted-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================================
+   576
+===================================== */
+
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 140px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.8rem;
+  }
+}
