@@ -333,9 +333,31 @@ p {
   margin-bottom: 20px;
 }
 
+.service-card ul.service-features {
+  list-style: disc inside;
+  margin: 20px 0;
+  padding: 0;
+  color: var(--text-secondary);
+}
+
+.service-card ul.service-features li {
+  margin-bottom: 10px;
+}
+
 .service-card a {
-  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--dark);
   font-weight: 600;
+  transition: var(--transition);
+}
+
+.service-card a:hover {
+  background: #c89d24;
 }
 
 /* =====================================
