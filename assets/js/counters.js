@@ -1,21 +1,23 @@
-const counters = document.querySelectorAll(".counter");
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
 
-counters.forEach((counter) => {
-  const updateCounter = () => {
-    const target = +counter.getAttribute("data-target");
+  counters.forEach((counter) => {
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
 
-    const current = +counter.innerText;
+      const current = +counter.innerText;
 
-    const increment = target / 100;
+      const increment = target / 100;
 
-    if (current < target) {
-      counter.innerText = Math.ceil(current + increment);
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
 
-      setTimeout(updateCounter, 20);
-    } else {
-      counter.innerText = target;
-    }
-  };
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
 
-  updateCounter();
+    updateCounter();
+  });
 });

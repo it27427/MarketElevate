@@ -1,9 +1,11 @@
-const images = document.querySelectorAll("img");
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img");
 
-images.forEach((img) => {
-  img.addEventListener("load", () => {
-    const parent = img.parentElement;
+  images.forEach((img) => {
+    img.addEventListener("load", () => {
+      const parent = img.parentElement;
 
-    parent.classList.add("image-loaded");
+      parent.classList.add("image-loaded");
+    });
   });
 });

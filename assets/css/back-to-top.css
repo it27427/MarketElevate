@@ -1,0 +1,51 @@
+#backToTop {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(135deg, #d4af37, #f5d76e);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.8);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  animation: float 2s ease-in-out infinite;
+  transform: translateY(0) scale(1);
+}
+
+#backToTop:hover {
+  transform: translateY(-4px) scale(1.08);
+}
+
+#backToTop:active {
+  transform: scale(0.95);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
