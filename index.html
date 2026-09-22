@@ -13,6 +13,8 @@
     <meta property="og:site_name" content="Agency Directory" />
     <meta name="twitter:card" content="summary_large_image" />
 
+    <meta name='impact-site-verification' value='f947e58c-eb0b-4f95-90fd-320c06892818'>
+
     <title>
       Top Freelance Services Directory | Compare Experts & Grow Faster
     </title>
@@ -48,6 +50,7 @@
 
     <link rel="icon" href="favicon.ico" />
 
+    <link rel="stylesheet" href="assets/css/service-cards.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <link rel="stylesheet" href="assets/css/back-to-top.css" />
@@ -139,7 +142,7 @@
           <div class="image-skeleton shimmer"></div>
 
           <img
-            src="assets/images/hero/hero.webp"
+            src="https://res.cloudinary.com/dickhba37/image/upload/v1782127750/hero_bneu1q.jpg"
             alt="Freelance Services"
             loading="lazy"
           />
@@ -151,15 +154,86 @@
 
     <section class="trusted">
       <div class="container">
-        <h2>Trusted Across Multiple Industries</h2>
-
-        <div class="trusted-logos">
-          <div class="logo-card"></div>
-          <div class="logo-card"></div>
-          <div class="logo-card"></div>
-          <div class="logo-card"></div>
-          <div class="logo-card"></div>
+        <!-- ===== HEADING ===== -->
+        <div class="trusted-heading">
+            <h2>Trusted Across Multiple Industries</h2>
+            <p>Premium services trusted by thousands of businesses worldwide</p>
         </div>
+
+        <!-- ===== 3D GLASS CARD GRID ===== -->
+        <div class="trusted-grid" id="trustedGrid">
+
+            <!-- Card 1 -->
+            <div class="glass-card" data-depth="0.12">
+                <div class="glass-card-inner">
+                    <span class="card-badge">★ Top</span>
+                    <div class="card-icon">
+                        <img src="https://res.cloudinary.com/dickhba37/image/upload/v1782128289/web-development_a3qqpg.jpg" alt="Web Development" loading="lazy" />
+                    </div>
+                    <h3 class="card-title">Web Development</h3>
+                    <p class="card-sub">Custom sites & apps</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass-card" data-depth="0.14">
+                <div class="glass-card-inner">
+                    <span class="card-badge">✦ Popular</span>
+                    <div class="card-icon">
+                        <img src="https://res.cloudinary.com/dickhba37/image/upload/v1782129054/app-development_cawifj.jpg" alt="App Development" loading="lazy" />
+                    </div>
+                    <h3 class="card-title">App Development</h3>
+                    <p class="card-sub">iOS & Android</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass-card" data-depth="0.10">
+                <div class="glass-card-inner">
+                    <span class="card-badge">⚡ AI</span>
+                    <div class="card-icon">
+                        <img src="https://res.cloudinary.com/dickhba37/image/upload/v1782128289/AI-automations_vlp3rh.jpg" alt="AI Automation" loading="lazy" />
+                    </div>
+                    <h3 class="card-title">AI Automation</h3>
+                    <p class="card-sub">Smart workflows</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="glass-card" data-depth="0.13">
+                <div class="glass-card-inner">
+                    <span class="card-badge">📈 Growth</span>
+                    <div class="card-icon">
+                        <img src="https://res.cloudinary.com/dickhba37/image/upload/v1782128288/digital-marketing_kk0igd.jpg" alt="Digital Marketing" loading="lazy" />
+                    </div>
+                    <h3 class="card-title">Digital Marketing</h3>
+                    <p class="card-sub">Multi-channel strategy</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="glass-card" data-depth="0.11">
+                <div class="glass-card-inner">
+                    <span class="card-badge">🔍 SEO</span>
+                    <div class="card-icon">
+                        <img src="https://res.cloudinary.com/dickhba37/image/upload/v1782128289/seo_ydqmba.jpg" alt="SEO" loading="lazy" />
+                    </div>
+                    <h3 class="card-title">SEO</h3>
+                    <p class="card-sub">Rank higher & faster</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="glass-card" data-depth="0.15">
+                <div class="glass-card-inner">
+                    <span class="card-badge">🎬 Pro</span>
+                    <div class="card-icon">
+                        <img src="https://res.cloudinary.com/dickhba37/image/upload/v1782128287/video-editing_gtlelq.jpg" alt="Video Editing" loading="lazy" />
+                    </div>
+                    <h3 class="card-title">Video Editing</h3>
+                    <p class="card-sub">Professional content</p>
+                </div>
+            </div>
       </div>
     </section>
 
@@ -768,6 +842,7 @@
 
     <script src="assets/js/preloader.js"></script>
     <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/home-service-card.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/gsap-effects.js"></script>
     <script src="assets/js/counters.js"></script>
