@@ -1,3 +1,12 @@
 {
-  "iis.configDir": ".\\"
+  "iis.configDir": ".\\",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": true,
+  "autoBarrel.formatting.excludeSemiColonAtEndOfLine": true,
+  "css.format.spaceAroundSelectorSeparator": true,
+  "scss.format.spaceAroundSelectorSeparator": true
 }
